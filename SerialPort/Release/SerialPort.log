@@ -1,0 +1,27 @@
+﻿  Processing .\SerialPort.idl
+  SerialPort.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.idl
+  oaidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\objidl.idl
+  objidl.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\unknwn.idl
+  unknwn.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.idl
+  wtypes.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypesbase.idl
+  wtypesbase.idl
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\basetsd.h
+  basetsd.h
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\guiddef.h
+  guiddef.h
+  Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.acf
+  oaidl.acf
+  stdafx.cpp
+  SerialPort.cpp
+  SerialPortCtrl.cpp
+SerialPortCtrl.cpp(364): warning C4018: '<' : signed/unsigned mismatch
+  SerialPortPropPage.cpp
+     Creating library D:\c++\vs2013程序清单\SerialPort4\Release\SerialPort.lib and object D:\c++\vs2013程序清单\SerialPort4\Release\SerialPort.exp
+  Generating code
+  Finished generating code
+  SerialPort.vcxproj -> D:\c++\vs2013程序清单\SerialPort4\Release\SerialPort.ocx

@@ -1,0 +1,59 @@
+// SerialPort.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (SerialPort.tlb) that will become a resource in
+// SerialPort.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(F3B170FB-CC6A-4B16-A337-4147EDBAA890), version(1.0),
+  control ]
+library SerialPortLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CSerialPortCtrl
+	[ 
+		uuid(ED79AADD-0562-4661-96D5-EFA5B1B5ECDC)	
+	]
+	dispinterface _DSerialPort
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+	
+			 
+		
+		 
+			[id(4)] void ClosePort();
+			[id(3)] void MainThread(BSTR portname);
+			[id(5)] LONG OpenPort(BSTR portname);
+	};
+
+	//  Event dispatch interface for CSerialPortCtrl
+
+	[ 
+		uuid(E36A00B1-4DA4-4066-9F2A-0A439B8A8D1A)	
+	]
+	dispinterface _DSerialPortEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			[id(1)] void ReadKh(BSTR kh);
+	};
+
+	//  Class information for CSerialPortCtrl
+	[
+		uuid(7C1BC0B0-46CC-4A2F-B0F0-37948E25D557)
+	]
+	coclass SerialPort
+	{
+		[default] dispinterface _DSerialPort;
+		[default, source] dispinterface _DSerialPortEvents;
+	};
+
+};

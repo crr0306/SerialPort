@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+<head>
+      <title>ø®∫≈</title>
+</head>
+<body>
+<object  id="SerialPort" classid="clsid:7C1BC0B0-46CC-4A2F-B0F0-37948E25D557">
+	<param name="_ExtentX" value="20000"/>
+	<param name="_ExtentY" value="10000"/>
+</object>
+
+<br>
+	<input type="button" OnClick="kahao()"  value=" ∂¡»°ø®∫≈"></input>
+<br>
+	<input type="button" OnClick="closeport()"  value="πÿ±’¥Æø⁄"></input>
+ 
+<br>
+<SCRIPT LANGUAGE="JavaScript" for="SerialPort" event="CallFunctionError(code, msg)">  
+	 
+	alert(kh);
+ 
+ 
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" >  
+	var res;
+	
+function kahao()  
+{  
+	SerialPort.MainThread("COM4");
+       
+	
+}
+ function closeport()  
+{  
+	SerialPort.ClosePort();
+	
+}
+function ReadKh(kh){
+alert('1==========='+kh);
+}
+function Init(){
+	
+	SerialPort.attachEvent('ReadKh', ReadKh);
+	
+}
+ //≥ı ºªØ
+Init()
+ 
+</SCRIPT>
+
+
+</body>
+</html>  
